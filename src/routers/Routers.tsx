@@ -4,6 +4,7 @@ import MainLayout from "../components/layouts/mainLayout/MainLayout";
 import HomePage from "../pages/homepage/HomePage";
 import RoomList from "../pages/roomList/RoomList";
 import RoomDetails from "../pages/roomDetails/RoomDetails";
+import UserInfo from "../pages/userInfo/UserInfo";
 const Routers: React.FC = () => {
   return useRoutes([
     {
@@ -25,6 +26,10 @@ const Routers: React.FC = () => {
         {
           path: "roomdetails/:id",
           element: <RoomDetails />,
+        },
+        {
+          path: "userinfo/:id",
+          element: <UserInfo />,
         },
       ],
     },
