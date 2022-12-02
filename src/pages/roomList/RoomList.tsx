@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { RootState } from "../../stores/configStore";
 import { getPhongThueTheoViTri } from "../../stores/roomForRent/roomForRentReducers";
-import { getViTriAll } from "../../stores/position/getAllPositionsReducers";
+import { getViTriAll } from "../../stores/position/GETAllPositionsReducers";
 
 const DanhSachPhong: React.FC = () => {
   const param = useParams();

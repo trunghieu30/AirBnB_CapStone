@@ -5,6 +5,8 @@ import HomePage from "../pages/homepage/HomePage";
 import RoomList from "../pages/roomList/RoomList";
 import RoomDetails from "../pages/roomDetails/RoomDetails";
 import UserInfo from "../pages/userInfo/UserInfo";
+import UserManagement from "../pages/admin/userManagement/UserManagement";
+import LocationManagement from "../pages/admin/locationManagement/LocationManagement";
 const Routers: React.FC = () => {
   return useRoutes([
     {
@@ -30,6 +32,20 @@ const Routers: React.FC = () => {
         {
           path: "userinfo/:id",
           element: <UserInfo />,
+        },
+      ],
+    },
+    {
+      path: "admin",
+      // element: <AdminLayout />,
+      children: [
+        {
+          path: "usermanagement",
+          element: <UserManagement />,
+        },
+        {
+          path: "locationmanagement",
+          element: <LocationManagement />,
         },
       ],
     },

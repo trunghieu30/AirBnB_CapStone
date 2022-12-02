@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../stores/configStore";
 import { getPhongThueID } from "../../stores/roomForRent/roomForRentId";
-import { getViTriAll } from "../../stores/position/getAllPositionsReducers";
+import { getViTriAll } from "../../stores/position/GETAllPositionsReducers";
 import {
   AiFillStar,
   AiOutlineDesktop,

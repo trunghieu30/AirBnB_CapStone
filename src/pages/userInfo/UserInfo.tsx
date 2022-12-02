@@ -5,7 +5,7 @@ import { RootState } from "../../stores/configStore";
 import { getDatPhongTheoMaNguoiDung } from "../../stores/rentRoom/GETRentByUsersIdReducers";
 import { getUsersID } from "../../stores/user/GETUsersIdReducers";
 import { getPhongThueAll } from "../../stores/rentRoom/GETAllRentRoomReducers";
-import { getViTriAll } from "../../stores/position/getAllPositionsReducers";
+import { getViTriAll } from "../../stores/position/GETAllPositionsReducers";
 import { AiOutlineSafety } from "react-icons/ai";
 import { TiTick } from "react-icons/ti";
 import moment from "moment";
