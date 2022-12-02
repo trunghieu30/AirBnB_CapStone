@@ -7,6 +7,8 @@ import RoomDetails from "../pages/roomDetails/RoomDetails";
 import UserInfo from "../pages/userInfo/UserInfo";
 import UserManagement from "../pages/admin/userManagement/UserManagement";
 import LocationManagement from "../pages/admin/locationManagement/LocationManagement";
+import RoomInfoManagement from "../pages/admin/roomInfoManagement/RoomInforManagement";
+import RentingManagement from "../pages/admin/rentingManagement/RentingManagement";
 const Routers: React.FC = () => {
   return useRoutes([
     {
@@ -46,6 +48,14 @@ const Routers: React.FC = () => {
         {
           path: "locationmanagement",
           element: <LocationManagement />,
+        },
+        {
+          path: "roominfomanagement",
+          element: <RoomInfoManagement />,
+        },
+        {
+          path: "rentingmanagement/:id",
+          element: <RentingManagement />,
         },
       ],
     },
