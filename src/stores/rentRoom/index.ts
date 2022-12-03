@@ -1,5 +1,5 @@
-// export { getDatPhongTheoMaNguoiDungReducer } from './getDatPhongTheoMaNguoiDungReducer'
-// export { deleteDatPhongReducer } from './deleteDatPhongReducer'
+export { getDatPhongTheoMaNguoiDungReducer } from "./GETRentByUsersIdReducers";
+export { deleteDatPhongReducer } from "./DELETERentRoomReducers";
 export { postDatPhongReducer } from "./POSTRentReducers";
-// export { getDatPhongIDReducer } from './getDatPhongIDReducer'
-// export { putDatPhongIDReducer } from './putDatPhongIDReducer'
+export { getDatPhongIDReducer } from "./GETRentRoomByIdReducers";
+export { putDatPhongIDReducer } from "./PUTRentRoomByIdReducers";
