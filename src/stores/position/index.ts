@@ -4,4 +4,4 @@ export { postViTriReducer } from "./POSTPositionReducers";
 export { deleteViTriReducer } from "./DELETEPositionsReducers";
 export { getViTriIDReducer } from "./GETPositionsByIdReducers";
 export { putViTriIDReducer } from "./PUTPositionsByIdReducers";
-// export { getViTriPhanTrangTimKiemReducer } from "./getViTriPhanTrangTimKiemReducer";
+export { getViTriPhanTrangTimKiemReducer } from "./GETPositionsSearchingReducers";

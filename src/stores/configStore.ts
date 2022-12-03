@@ -5,7 +5,7 @@ import * as position from "./position";
 import * as roomForRent from "./roomForRent";
 import * as rentRoom from "./rentRoom";
 import * as comments from "./comments";
-// import * as comments from './comments'
+import * as authentication from './authentication'
 
 const rootReducer = combineReducers({
   ...user,
@@ -13,6 +13,7 @@ const rootReducer = combineReducers({
   ...roomForRent,
   ...rentRoom,
   ...comments,
+  ...authentication,
 });
 
 export const store = configureStore({
