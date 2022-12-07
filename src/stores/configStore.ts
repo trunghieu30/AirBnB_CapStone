@@ -1,24 +1,25 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import thunk from "redux-thunk";
-import * as user from "./user";
-import * as position from "./position";
-import * as roomForRent from "./roomForRent";
-import * as rentRoom from "./rentRoom";
-import * as comments from "./comments";
-import * as authentication from './authentication'
+import * as nguoiDung from './nguoiDung'
+import * as viTri from './viTri'
+import * as phongThue from './phongThue'
+import * as datPhong from './datPhong'
+import * as auth from './auth'
+import * as binhLuan from './binhLuan'
+
 
 const rootReducer = combineReducers({
-  ...user,
-  ...position,
-  ...roomForRent,
-  ...rentRoom,
-  ...comments,
-  ...authentication,
-});
+   ...nguoiDung,
+   ...viTri,
+   ...phongThue,
+   ...datPhong,
+   ...auth,
+   ...binhLuan
+})
 
 export const store = configureStore({
-  reducer: rootReducer,
-  middleware: [thunk],
-});
+   reducer: rootReducer,
+   middleware: [thunk]
+})
 
-export type RootState = ReturnType<typeof rootReducer>;
+export type RootState = ReturnType<typeof rootReducer>
